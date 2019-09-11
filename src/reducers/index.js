@@ -54,7 +54,11 @@ export const reducer = (state = initialState, action) => {
     case CHOOSE_VEHICLE:
       return {
         ...state,
-        car: action.payload,
+        car: {
+          ...state.car,
+          price: action.payload.price,
+          name: action.payload.name,
+        },
       };
     default:
       return state;
