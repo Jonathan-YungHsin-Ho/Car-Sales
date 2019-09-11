@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { addFeature } from '../actions';
 
 const AdditionalFeatures = props => {
-  const handleClick = id => {
+  const handleAddFeature = id => {
     props.addFeature(id);
   };
 
@@ -18,7 +18,7 @@ const AdditionalFeatures = props => {
             <AdditionalFeature
               key={item.id}
               feature={item}
-              handleClick={handleClick}
+              handleAddFeature={handleAddFeature}
             />
           ))}
         </ol>
