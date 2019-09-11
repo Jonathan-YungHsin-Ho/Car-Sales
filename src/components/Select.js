@@ -3,7 +3,7 @@ import React from 'react';
 export default function Select(props) {
   return (
     <div class='control'>
-      <div class='select is-loading'>
+      <div class='select is-primary'>
         <select onChange={props.handleSelect}>
           <option>Select a vehicle</option>
           {props.vehicles.map(vehicle => (
