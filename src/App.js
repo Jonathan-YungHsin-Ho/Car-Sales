@@ -44,9 +44,9 @@ const App = props => {
       .catch(err => console.log(err));
   }, []);
 
-  const handleRemoveFeature = id => {
+  const handleRemoveFeature = item => {
     // dispatch an action here to remove an item
-    props.removeFeature(id);
+    props.removeFeature(item);
   };
 
   // const buyItem = item => {

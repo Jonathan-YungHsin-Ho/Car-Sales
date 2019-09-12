@@ -5,8 +5,8 @@ import { connect } from 'react-redux';
 import { addFeature } from '../actions';
 
 const AdditionalFeatures = props => {
-  const handleAddFeature = id => {
-    props.addFeature(id);
+  const handleAddFeature = item => {
+    props.addFeature(item);
   };
 
   return (
